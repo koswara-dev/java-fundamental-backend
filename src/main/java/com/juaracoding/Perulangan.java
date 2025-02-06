@@ -1,5 +1,7 @@
 package com.juaracoding;
 
+import java.util.Scanner;
+
 public class Perulangan {
 
     public static void main(String[] args) {
@@ -54,6 +56,36 @@ public class Perulangan {
         }
         System.out.println("Total Harga = "+sum);
 
+        Scanner scanner = new Scanner(System.in);
+
+        int x = 0;
+        while(x < 0) {
+            System.out.print("x="+x);
+            x++;
+        }
+
+        int y = 0;
+        do {
+            System.out.print("y="+y);
+            y++;
+        }while (y < 0);
+
+        while (true){
+            System.out.println("Input angka = ");
+            int angka = scanner.nextInt();
+            if(angka == 0){
+                break;
+            }
+            System.out.println("Input angka 0 untuk exit dari console");
+        }
+
+        System.out.println("Pilih Menu CRUD:");
+        int selectMenu = scanner.nextInt();
+        switch (selectMenu){
+
+
+
+        }
 
     }
 
