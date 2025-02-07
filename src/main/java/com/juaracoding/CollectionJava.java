@@ -104,13 +104,13 @@ public class CollectionJava {
         System.out.println("\nSorted by employeeName:");
 
         // Create a list from the elements of the HashMap
-        List<Map.Entry<Integer, Employee>> list = new ArrayList<>(employeeMap.entrySet());
+        List<Map.Entry<Integer, Employee>> listEmployee = new ArrayList<>(employeeMap.entrySet());
 
         // Sort the list based on employeeName
-        list.sort((entry1, entry2) -> entry1.getValue().getEmployeeName().compareTo(entry2.getValue().getEmployeeName()));
+        listEmployee.sort((entry1, entry2) -> entry1.getValue().getEmployeeName().compareTo(entry2.getValue().getEmployeeName()));
 
         // Print sorted list
-        for (Map.Entry<Integer, Employee> entry : list) {
+        for (Map.Entry<Integer, Employee> entry : listEmployee) {
             System.out.println(entry.getValue());
         }
     }
