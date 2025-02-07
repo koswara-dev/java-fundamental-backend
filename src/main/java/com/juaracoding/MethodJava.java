@@ -31,6 +31,10 @@ public class MethodJava {
             System.out.println(number);
         }
 
+        // compareTo
+        String name = "Jakartc";
+        System.out.println(name.compareTo("Jakarta"));
+
     }
 
 
